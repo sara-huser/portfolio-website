@@ -1,0 +1,47 @@
+$navbar-breakpoint: 768px;
+$animationDuration: 1s; // specify animation duration. Default value: 1s 
+
+// @import "vue2-animate/src/sass/vue2-animate.scss";
+@import '~bulma/bulma';
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+html,
+body {
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  color: $darkGray;
+  font-size: 16px;
+  background: #f2f2f2;
+}
+
+.title {
+  letter-spacing: 0.1em;
+  color: #072d3d;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 25px;
+  }
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.5em;
+  @media screen and (max-width: $tablet) {
+    font-size: 14px;
+  }
+}
+
+.card {
+  box-shadow: none;
+  border: 1px solid $medGray;
+}
+
+.container {
+  padding-bottom: 2rem;
+}
